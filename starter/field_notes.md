@@ -52,7 +52,6 @@ reconstruct it from memory at the end.
 # TODO: the commands you actually ran to set up this repo
 git clone <repo>
 cd <repo> 
-
 ```
 
 ## 1. First look at the raw file
@@ -63,13 +62,20 @@ enough to see the shape of it without scrolling past everything.
 
 ```bash
 # TODO: a command that prints just the first 5 lines of the raw file
-head -n 5 co3_emissions_data_analysis.csv
+head -n 5 co2_emissions_data_analysis.csv
 ```
 
 **Output:**
 _TODO: paste what you actually got_
 
+country,iso_code,year,population,gdp,co2
+Afghanistan,AFG,2022,40578847,53303471617,10.170
+Africa,,2022,1445862695,,1459.114
+Africa (GCP),,2022,,,1459.103
+Albania,ALB,2022,2827614,36171005594,4.498
+
 **What I notice:** _TODO — your raw observations, in your own words_
+The first five lines includes the header which helps with understanding the following four lines and how they're organized/categorized. I also noticed Africa (GCP) doesn't have some info, such as iso_code, which makes sense since that encompasses the entire continent and isn't specific country data.
 
 ## 2. Column names
 
@@ -79,10 +85,12 @@ a lot easier to scan than one long comma-separated row.
 ```bash
 # TODO: a command (or combination of commands) that prints just the header
 # row, one column name per line
+
 ```
 
 **Output:**
 _TODO_
+
 
 ## 3. Column-by-column data type table
 
@@ -94,6 +102,7 @@ row. Column numbers for reference: `country`=1, `iso_code`=2, `year`=3,
 ```bash
 # TODO: a command that prints the first 6 values from a single column
 # (repeat this for at least 5 of the 6 columns, swapping in each column's number)
+
 ```
 
 Fill in the table from what you actually saw — not a guess from the column
