@@ -102,19 +102,21 @@ row. Column numbers for reference: `country`=1, `iso_code`=2, `year`=3,
 ```bash
 # TODO: a command that prints the first 6 values from a single column
 # (repeat this for at least 5 of the 6 columns, swapping in each column's number)
-
+cut -d ',' -f1 data/co2_emissions_2022.csv | head -n 6
+cut -d ',' -f2 data/co2_emissions_2022.csv | head -n 6
+cut -d ',' -f3 data/co2_emissions_2022.csv | head -n 6
 ```
 
 Fill in the table from what you actually saw — not a guess from the column
 name alone:
 
 | Column | Inferred type | How I can tell |
-|---|---|---|
-| _TODO_ | _TODO_ | _TODO_ |
-| _TODO_ | _TODO_ | _TODO_ |
-| _TODO_ | _TODO_ | _TODO_ |
-| _TODO_ | _TODO_ | _TODO_ |
-| _TODO_ | _TODO_ | _TODO_ |
+|country|iso_code|year|
+| Afghanistan | AFG | 2022 |
+| Africa |  | 2022 |
+| Africa (GCP) |  | 2022 |
+| Albania | ALB | 2022 |
+| Algeria | DZA | 2022 |
 
 **In your own words:** what's the actual difference between a list/array
 and a table? (Not a definition you looked up — explain it the way you'd
