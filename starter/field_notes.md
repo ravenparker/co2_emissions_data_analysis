@@ -62,11 +62,10 @@ enough to see the shape of it without scrolling past everything.
 
 ```bash
 # TODO: a command that prints just the first 5 lines of the raw file
-head -n 5 co2_emissions_data_analysis.csv
+head -n 5 co2_emissions_2022.csv
 ```
 
 **Output:**
-_TODO: paste what you actually got_
 
 country,iso_code,year,population,gdp,co2
 Afghanistan,AFG,2022,40578847,53303471617,10.170
@@ -74,7 +73,7 @@ Africa,,2022,1445862695,,1459.114
 Africa (GCP),,2022,,,1459.103
 Albania,ALB,2022,2827614,36171005594,4.498
 
-**What I notice:** _TODO — your raw observations, in your own words_
+**What I notice:**
 The first five lines includes the header which helps with understanding the following four lines and how they're organized/categorized. I also noticed Africa (GCP) doesn't have some info, such as iso_code, which makes sense since that encompasses the entire continent and isn't specific country data.
 
 ## 2. Column names
@@ -111,25 +110,26 @@ Fill in the table from what you actually saw — not a guess from the column
 name alone:
 
 | Column | Inferred type | How I can tell |
-|country|iso_code|year|
-| Afghanistan | AFG | 2022 |
-| Africa |  | 2022 |
-| Africa (GCP) |  | 2022 |
-| Albania | ALB | 2022 |
-| Algeria | DZA | 2022 |
+| --- | --- | --- |
+| country | str | letters |
+| iso_code | str | letters |
+| year | int | whole number |
+| population | int | whole number |
+| gdp | int | whole number |
+| co2 | float | decimal |
 
 **In your own words:** what's the actual difference between a list/array
 and a table? (Not a definition you looked up — explain it the way you'd
 explain it to a friend who's never coded. No command needed for this one,
 just think about the table you just filled in above.)
 
-_TODO_
+The difference between a list/array and a table is how they're structured. A list or array have a set of individual values. Tables are sets of rows and columns, but lists are values in a sequence. 
 
 ## 4. Structured or unstructured?
 
 State whether this dataset is structured or unstructured, and why.
 
-_TODO_
+The dataset is structured because each column in the table has consistent data types. For example, `iso_code` is always a string of 3 letters, whereas `population` is always a whole number, making it an int consistently.
 
 ## 5. Before you trust this data
 
@@ -143,17 +143,19 @@ command's output into the next as input.
 ```bash
 # TODO: a command (or combination) that counts how many rows have a
 # BLANK iso_code
+cut -d ',' -f2 data/co2_emissions_2022.csv | grep -c '^$'
 ```
 
 **Output:**
-_TODO_
+36
 
 ```bash
 # TODO: the same idea, but for the gdp column
+cut -d ',' -f5 data/co2_emissions_2022.csv | grep -c '^$'
 ```
 
 **Output:**
-_TODO_
+89
 
 List **at least 2** specific things you'd want to know about how this
 dataset was collected, before trusting any conclusion drawn from it — ground
