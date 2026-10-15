@@ -162,8 +162,9 @@ dataset was collected, before trusting any conclusion drawn from it — ground
 at least one in the counts you just found.
 
 **My 2 concerns:**
-1. _TODO_
-2. _TODO_
+
+1. Since the dataset includes more than just countries (like continents, countries groups by income, etc.), what determines how those are divided and categorized?
+2. Why are some countries missing data in `co2`? 
 
 ## 6. Data-quality question for the source
 
@@ -172,7 +173,7 @@ phrase it as a real question you'd send to the data's source/maintainer. A
 good test: could they actually answer it with a concrete yes/no or fact —
 not "is this data good?"
 
-_TODO_
+How is each grouping available (income, continent, continent with some exclusions, etc.) determined? 
 
 ## 7. Something you're actually curious about
 
@@ -184,11 +185,13 @@ curious to compare, and look up their full rows.
 ```bash
 # TODO: a command that finds a specific country's row by name (repeat for
 # a second country of your choice)
+grep -n "" data/co2_emissions_2022.csv
 ```
 
 **Output:**
 _TODO_
-
+17:Asia (excl. China and India),,2022,,,7694.873
+49:China,CHN,2022,1425179562,26966016991166,11711.808
 **My question:** _TODO_
 
 ## 8. AI-literacy reflection
@@ -200,10 +203,10 @@ fact before relying on it professionally — specific enough that you could
 actually follow it, not "I'll be careful."
 
 **Risks:**
-1. _TODO_
-2. _TODO_
+1. AI saying something confidently and incorrectly about the data.
+2. AI making up info about the data (i.e. about missing data points).
 
-**My rule:** _TODO_
+**My rule:** Verify all information that AI tells by double checking the data points it references and ensure it uses the same (or accurate) source(s).
 
 ## 9. Something that went wrong (and how you figured it out)
 
@@ -215,9 +218,10 @@ fix — not "I googled it and it worked."
 
 ```bash
 # TODO: a command that errored, or gave you unexpected results
+head -n 5 data/co2_emissions_data_analysis.csv
 ```
 
 **What happened:**
-_TODO: the actual error message, or the unexpected output you got_
+head: data/co2_emissions_data_analysis.csv: No such file or directory
 
-**What it told me and how I fixed it:** _TODO_
+**What it told me and how I fixed it:** Since the directory didn't exist, I likely spelled it wrong. I realized I was putting in the wrong name of the csv. The CSV file is `co2_emmisions_2022.csv`, not `co2_emissions_data_analysis.csv`. 
