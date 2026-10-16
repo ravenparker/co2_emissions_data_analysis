@@ -22,6 +22,10 @@ The dataset is a table titled `co2_missions_2022.csv` which contains six columns
 
 The dataset is structured because it contains rows and columns, with consistent data types in each column.
 
+## License and Sources
+
+GitHub repo: [data/co2_emissions_2022.csv](data/co2_emissions_2022.csv)
+
 ## Data Quality Question
 
 I wondered about why some countries listed were actually just continents. Some were also groupings by income. Why were they grouped this way, and what determines income levels as high or low for each country? There were also some missing values within the dataset, so I was also curious on why that is.
