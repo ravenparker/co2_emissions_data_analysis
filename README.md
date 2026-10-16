@@ -25,6 +25,7 @@ The dataset is structured because it contains rows and columns, with consistent 
 ## License and Sources
 
 GitHub repo: [data/co2_emissions_2022.csv](data/co2_emissions_2022.csv)
+
 MIT License
 
 ## Data Quality Question
