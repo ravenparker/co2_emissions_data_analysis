@@ -104,6 +104,9 @@ row. Column numbers for reference: `country`=1, `iso_code`=2, `year`=3,
 cut -d ',' -f1 data/co2_emissions_2022.csv | head -n 6
 cut -d ',' -f2 data/co2_emissions_2022.csv | head -n 6
 cut -d ',' -f3 data/co2_emissions_2022.csv | head -n 6
+cut -d ',' -f4 data/co2_emissions_2022.csv | head -n 6
+cut -d ',' -f5 data/co2_emissions_2022.csv | head -n 6
+cut -d ',' -f6 data/co2_emissions_2022.csv | head -n 6
 ```
 
 Fill in the table from what you actually saw — not a guess from the column
