@@ -207,6 +207,7 @@ fact before relying on it professionally — specific enough that you could
 actually follow it, not "I'll be careful."
 
 **Risks:**
+
 1. AI saying something confidently and incorrectly about the data.
 2. AI making up info about the data (i.e. about missing data points).
 
@@ -228,4 +229,4 @@ head -n 5 data/co2_emissions_data_analysis.csv
 **What happened:**
 head: data/co2_emissions_data_analysis.csv: No such file or directory
 
-**What it told me and how I fixed it:** Since the directory didn't exist, I likely spelled it wrong. I realized I was putting in the wrong name of the csv. The CSV file is `co2_emmisions_2022.csv`, not `co2_emissions_data_analysis.csv`. 
+**What it told me and how I fixed it:** Since the directory didn't exist, I likely spelled it wrong. I realized I was putting in the wrong name of the csv. The CSV file is `co2_emmisions_2022.csv`, not `co2_emissions_data_analysis.csv`.
