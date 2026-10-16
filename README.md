@@ -1,6 +1,6 @@
-# CO2 Emissions Data Analysis: Terminal Commands
+# CO2 Emissions Data Analysis
 
-## Scenario
+## Stakeholder and Business Problem
 
 A climate-and-energy nonprofit needs to decide where to direct community-protection and climate-support efforts, and has just received a new country-level energy and emissions dataset to help with that — but nobody has actually opened the file yet.
 
@@ -25,6 +25,7 @@ The dataset is structured because it contains rows and columns, with consistent 
 ## License and Sources
 
 GitHub repo: [data/co2_emissions_2022.csv](data/co2_emissions_2022.csv)
+MIT License
 
 ## Data Quality Question
 
