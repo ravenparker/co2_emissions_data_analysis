@@ -26,6 +26,8 @@ The dataset is structured because it contains rows and columns, with consistent 
 
 GitHub repo: [data/co2_emissions_2022.csv](data/co2_emissions_2022.csv)
 
+[OWID CO2 and Greenhouse Gas Emissions 2022](https://ourworldindata.org/co2-and-greenhouse-gas-emissions#article-citation)
+
 MIT License
 
 ## Data Quality Question
