@@ -126,7 +126,7 @@ and a table? (Not a definition you looked up — explain it the way you'd
 explain it to a friend who's never coded. No command needed for this one,
 just think about the table you just filled in above.)
 
-The difference between a list/array and a table is how they're structured. A list or array have a set of individual values. Tables are sets of rows and columns, but lists are values in a sequence. 
+The difference between a list/array and a table is how they're structured. A list or array have a set of individual values. Tables are sets of rows and columns, but lists are values in a sequence.
 
 ## 4. Structured or unstructured?
 
@@ -176,7 +176,7 @@ phrase it as a real question you'd send to the data's source/maintainer. A
 good test: could they actually answer it with a concrete yes/no or fact —
 not "is this data good?"
 
-How is each grouping available (income, continent, continent with some exclusions, etc.) determined? 
+How is each grouping available (income, continent, continent with some exclusions, etc.) determined?
 
 ## 7. Something you're actually curious about
 
@@ -192,10 +192,11 @@ grep -n "" data/co2_emissions_2022.csv
 ```
 
 **Output:**
-_TODO_
+
 17:Asia (excl. China and India),,2022,,,7694.873
 49:China,CHN,2022,1425179562,26966016991166,11711.808
-**My question:** _TODO_
+
+**My question:** What causes China's CO2 emissions to be so high compared to other countries?
 
 ## 8. AI-literacy reflection
 
