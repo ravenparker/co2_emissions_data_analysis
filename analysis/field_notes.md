@@ -88,7 +88,6 @@ head -n 1 data/co2_emissions_2022.csv
 ```
 
 **Output:**
-_TODO_
 country,iso_code,year,population,gdp,co2
 
 ## 3. Column-by-column data type table
@@ -167,7 +166,7 @@ at least one in the counts you just found.
 **My 2 concerns:**
 
 1. Since the dataset includes more than just countries (like continents, countries groups by income, etc.), what determines how those are divided and categorized?
-2. Why are some countries missing data in `co2`? 
+2. Why are some countries missing data in `co2`?
 
 ## 6. Data-quality question for the source
 
